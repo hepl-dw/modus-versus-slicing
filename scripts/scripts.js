@@ -7,15 +7,21 @@
 
     "use strict";
 
+    var fToggleSearchForm;
+
+    fToggleSearchForm = function() {
+        var $form = document.querySelector( ".search-form" );
+
+        if ( $form.className === "search-form" ) {
+            $form.className += " search-form--js-is-open";
+            document.querySelector( ".search-form__input" ).focus();
+        } else {
+            $form.className = "search-form";
+        }
+    };
+
     window.addEventListener( "load", function() {
-        document.querySelector( ".search-form-toggle" ).addEventListener( "click", function() {
-            if( this.className === "search-form-toggle" ) {
-                this.className = "search-form-toggle open";
-                document.getElementById( "search-query" ).focus();
-            } else {
-                this.className = "search-form-toggle";
-            }
-        } );
+        document.querySelector( ".search-form__toggle" ).addEventListener( "click", fToggleSearchForm );
     } );
 
 } )();

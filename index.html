@@ -3,72 +3,72 @@
     <head>
         <meta charset="UTF-8" />
         <title>MODUS Versus</title>
-        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <div id="wrapper">
-            <header>
+        <div class="wrapper">
+            <header class="header">
                 <div class="topbar">
-                    <h1 role="heading" aria-level="1">
-                        <a href="#">MODUS Versus</a>
+                    <h1 class="logo" role="heading" aria-level="1">
+                        <a class="logo__link" href="#">MODUS Versus</a>
                     </h1>
-                    <nav>
-                        <h2 role="heading" aria-level="2">
+                    <nav class="main-nav">
+                        <h2 class="main-nav__heading hidden" role="heading" aria-level="2">
                             Main navigation menu
                         </h2>
-                        <ul>
-                            <li class="active">
-                                <a href="#">Home</a>
+                        <ul class="main-nav__list">
+                            <li class="main-nav__elt">
+                                <a class="main-nav__link main-nav__link--is-active" href="#">Home</a>
                             </li>
-                            <li>
-                                <a href="#">About</a>
+                            <li class="main-nav__elt">
+                                <a class="main-nav__link" href="#">About</a>
                             </li>
-                            <li>
-                                <a href="#">Services</a>
+                            <li class="main-nav__elt">
+                                <a class="main-nav__link" href="#">Services</a>
                             </li>
-                            <li class="has-dropdown">
-                                <a href="#">Portfolio</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Portfolio sub page 1</a>
+                            <li class="main-nav__elt main-nav__elt--has-dropdown">
+                                <a class="main-nav__link main-nav__link--is-dropdown-head" href="#">Portfolio</a>
+                                <ul class="main-nav__list main-nav__list--is-dropdown">
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Portfolio sub page 1</a>
                                     </li>
-                                    <li>
-                                        <a href="#">Portfolio sub page 2</a>
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Portfolio sub page 2</a>
                                     </li>
-                                    <li>
-                                        <a href="#">Portfolio sub page 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li class="has-dropdown">
-                                <a href="#">Features</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Features sub page 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Features sub page 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Features sub page 3</a>
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Portfolio sub page 3</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="#">Contact</a>
+                            <li class="main-nav__elt">
+                                <a class="main-nav__link" href="#">Blog</a>
+                            </li>
+                            <li class="main-nav__elt main-nav__elt--has-dropdown">
+                                <a class="main-nav__link main-nav__link--is-dropdown-head" href="#">Features</a>
+                                <ul class="main-nav__list main-nav__list--is-dropdown">
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Features sub page 1</a>
+                                    </li>
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Features sub page 2</a>
+                                    </li>
+                                    <li class="main-nav__elt main-nav__elt--is-sub-elt">
+                                        <a class="main-nav__link main-nav__link--is-sub-link" href="#">Features sub page 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__elt">
+                                <a class="main-nav__link" href="#">Contact</a>
                             </li>
                         </ul>
-                        <form class="search" role="search" action="#" method="get">
+                        <form class="search-form" role="search" action="#" method="get">
                             <fieldset>
-                                <legend>Search inside the site</legend>
-                                <span class="search-form-toggle">show the search form</span>
-                                <div class="form-elt">
-                                    <label for="search-query">Search term:</label>
-                                    <input type="search" name="q" id="search-query" placeholder="keywords, term…" />
-                                    <button type="submit">search</button>
+                                <legend class="search-form__legend hidden">Search inside the site</legend>
+                                <span class="search-form__toggle">show the search form</span>
+                                <div class="search-form__form-elt">
+                                    <label class="search-form__label hidden" for="search-query">Search term:</label>
+                                    <input class="search-form__input" type="search" name="q" placeholder="keywords, term…" />
+                                    <button class="search-form__button" type="submit">search</button>
                                 </div>
                             </fieldset>
                         </form>
